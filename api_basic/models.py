@@ -6,7 +6,8 @@ from django.contrib.auth.models import User
 class Entity(models.Model):
     user = models.ForeignKey(
         User,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        related_name='entities'
     )
     image=models.URLField()
     tags = ArrayField(models.CharField(max_length=200), blank=True)
