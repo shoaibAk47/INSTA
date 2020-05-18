@@ -9,6 +9,7 @@ class Entity(models.Model):
         on_delete=models.CASCADE,
         related_name='entities'
     )
+    sdfasfasd
     image=models.URLField()
     tags = ArrayField(models.CharField(max_length=200), blank=True)
     height=models.IntegerField()
