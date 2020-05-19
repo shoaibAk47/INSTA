@@ -26,5 +26,8 @@ http://127.0.0.1:8000/api/list-entities/ = To show all entities of a user
 http://127.0.0.1:8000/api/entity/id/ = To get the specific entity of a user, so that user can view,update or delete this entity
 
 
+4th commit- New functionalities are added
 
+I have added the functionalities as per the requirements. Tags is now used as a ManyToMany field instead of arrayfield.
 
+http://127.0.0.1:8000/api/showtags = To show the all the tags of a the user and it's associated entities.
